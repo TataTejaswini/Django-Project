@@ -1,0 +1,40 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Aboutus {% endblock %}
+{% block content %}
+<center>
+	<h3>Welcome to Aboutpage</h3>
+    <h4>Here You can know about Online Grocery Shopping</h4>
+</center>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<center>
+		<img src="{% static 'images/1.jpg' %}" alt="logo" height=250px class=img-thumbnail>
+	</center>
+
+ <br> 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 text-center">
+    	<h3 style="background-color: #ff4d88;text-align: center">Vegetables</h3>
+      <img src="{% static 'images/6.jpg' %}" alt="logo" height=180px class="rounded">
+        <p>We Provide Fresh Vegetables At Reasonable Prices</p>
+        <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="background-color: #ff4d88;text-align: center">Fruits</h3>
+      <img src="{% static 'images/8.jpg' %}" alt="logo" height=180px class="rounded">
+      <p>We Provide Fresh Fruits At Reasonable Prices</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="background-color: #ff4d88;text-align: center">Dairy Products</h3>
+      <img src="{% static 'images/9.jpg' %}" alt="logo" height=180px class="rounded">        
+      <p>We Provide Fresh Dairy Products like milk,etc..</p>
+  </div>
+  </div>
+</div>
+{% endblock %}
